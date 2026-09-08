@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Smart Attendance
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="register.html">
+                Register Student
+            </a>
+
+            <a href="attendance.html">
+                Attendance
+            </a>
+
+            <a href="index.html">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main class="container">
+
+        <h1>Attendance Records</h1>
+
+        <div class="attendance-controls">
+
+            <input
+                type="text"
+                id="searchAttendance"
+                placeholder="Search student..."
+            >
+
+            <button onclick="searchAttendance()">
+                Search
+            </button>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table id="attendanceTable">
+
+                <thead>
+
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>ST001</td>
+                        <td>Example Student</td>
+                        <td>16-08-2026</td>
+                        <td>09:30 AM</td>
+                        <td class="present">
+                            Present
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>ST002</td>
+                        <td>Example Student 2</td>
+                        <td>16-08-2026</td>
+                        <td>09:32 AM</td>
+                        <td class="present">
+                            Present
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

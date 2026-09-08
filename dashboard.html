@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Attendance - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Smart Attendance
+        </div>
+
+        <div class="nav-links">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="register.html">Register Student</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="index.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <main class="container">
+
+        <h1>Dashboard</h1>
+
+        <p class="welcome">
+            Welcome to the Smart Attendance Management System
+        </p>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Register Student</h2>
+
+                <p>
+                    Register a new student and capture their face data.
+                </p>
+
+                <a href="register.html" class="button">
+                    Register
+                </a>
+            </div>
+
+
+            <div class="card">
+                <h2>Take Attendance</h2>
+
+                <p>
+                    Use face recognition to mark student attendance.
+                </p>
+
+                <button class="button" onclick="startAttendance()">
+                    Start Attendance
+                </button>
+            </div>
+
+
+            <div class="card">
+                <h2>View Attendance</h2>
+
+                <p>
+                    View the attendance records of registered students.
+                </p>
+
+                <a href="attendance.html" class="button">
+                    View Records
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="info-box">
+
+            <h2>System Workflow</h2>
+
+            <ol>
+                <li>Register student</li>
+                <li>Capture face data</li>
+                <li>System automatically processes the data</li>
+                <li>Face recognition identifies students</li>
+                <li>Attendance is recorded</li>
+            </ol>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

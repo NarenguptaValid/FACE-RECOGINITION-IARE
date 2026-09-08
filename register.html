@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register Student</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Smart Attendance
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="register.html">
+                Register Student
+            </a>
+
+            <a href="attendance.html">
+                Attendance
+            </a>
+
+            <a href="index.html">
+                Logout
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main class="container">
+
+        <div class="form-container">
+
+            <h1>Register Student</h1>
+
+            <p>
+                Enter student details and capture the student's face.
+            </p>
+
+
+            <form id="registerForm">
+
+                <label for="studentName">
+                    Student Name
+                </label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    placeholder="Enter student name"
+                    required
+                >
+
+
+                <label for="studentId">
+                    Student ID
+                </label>
+
+                <input
+                    type="text"
+                    id="studentId"
+                    placeholder="Enter student ID"
+                    required
+                >
+
+
+                <label for="department">
+                    Department
+                </label>
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Enter department"
+                    required
+                >
+
+
+                <div class="camera-box">
+
+                    <div class="camera-placeholder">
+
+                        <p>Camera Preview</p>
+
+                        <span>
+                            Face capture will be connected
+                            to the backend later.
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit">
+                    Register Student
+                </button>
+
+
+                <p id="registerMessage"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
